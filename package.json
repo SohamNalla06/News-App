@@ -8,14 +8,25 @@
     "@testing-library/user-event": "^13.5.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-infinite-scroll-component": "^6.1.0",
+    "react-router-dom": "^5.0.0",
     "react-scripts": "5.0.1",
+    "react-top-loading-bar": "^2.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "react-scripts --openssl-legacy-provider start",
+    "build": "react-scripts --openssl-legacy-provider build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
+  },
+  "script": {
+    "ng": "ng",
+    "start": "node server.js",
+    "build": "NODE_OPTION=--openssl-legacy-provider && ng build",
+    "test": "nd test",
+    "lint": "ng lint",
+    "e2e": "ng e2e"
   },
   "eslintConfig": {
     "extends": [
